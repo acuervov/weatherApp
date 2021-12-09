@@ -4,7 +4,6 @@ import './Cards.css';
 import Card from '../Card/Card';
 
 export default function Cards({cities}) {
-  console.log(cities)
   return (
     <div className='cards'>
       {cities.map(c => <Card

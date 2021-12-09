@@ -1,4 +1,4 @@
-import {FIND_CITY} from './Const'
+import {FIND_CITY, REMOVE_CITY, DETAIL} from './Const'
 
 export function findCity(name){
     return function(dispatch){
@@ -41,5 +41,17 @@ export function findCity(name){
         alert("Ciudad no encontrada");
         }
         })
+    }
+}
+
+export function removeCity(id){
+    return function (dispatch){
+        dispatch({type: REMOVE_CITY, payload: id})
+    }
+}
+
+export function cityDetail(id){
+    return function (dispatch){
+        dispatch({type:DETAIL, payload: id})
     }
 }
