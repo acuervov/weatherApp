@@ -1,9 +1,10 @@
 import React from 'react';
 import './Cards.css';
 
-import Card from './Card.jsx';
+import Card from '../Card/Card';
 
-export default function Cards({cities, onClose}) {
+export default function Cards({cities}) {
+  console.log(cities)
   return (
     <div className='cards'>
       {cities.map(c => <Card
@@ -13,7 +14,7 @@ export default function Cards({cities, onClose}) {
           min={c.min}
           name={c.name}
           img={c.img}
-          onClose={() => onClose(c.id)}
+          flag = {c.bandera}
         /> )}
     </div>
   );
