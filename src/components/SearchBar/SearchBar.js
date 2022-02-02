@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux'
 import { findCity } from "../../Redux/Actions";
 
 
-export default function SearchBar({onSearch}) {
+export default function SearchBar() {
   const [city, setCity] = useState("");
   const dispatch = useDispatch()
 

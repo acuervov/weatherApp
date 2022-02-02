@@ -23,7 +23,7 @@ export function findCity(name){
             };
             var pais = recurso.sys.country; 
 
-            fetch("https://country-info.p.rapidapi.com/code/" + pais, {
+            fetch("http://country-info.p.rapidapi.com/code/" + pais, {
 	            "method": "GET",
 	            "headers": {
 		        "x-rapidapi-host": "country-info.p.rapidapi.com",
